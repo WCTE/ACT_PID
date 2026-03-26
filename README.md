@@ -89,6 +89,13 @@ Placeholder methods to implement:
 - currently has comments describing desired analysis pipeline steps (ring finding, 2D cuts, ACT02/ACT35 + TOF cuts, distribution scaling, likelihood
   calculation, comparisons)
 
+
+### `notebooks/PID_with_WCTE_tank_Sahar.ipynb`
+
+- identifies the different particles based on the shape of the charge deposited inside the tank 
+- runs over the full dataset
+- Applies a 6 ns time cut on all events (cleaner sample)
+
 ## Analysis workflow (suggested implementation)
 
 1. Add ring finding code into `apply_ring_finding_algorithm()` using tank charge data.
